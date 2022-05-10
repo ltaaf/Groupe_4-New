@@ -1,1 +1,8 @@
 /* ici le code css  */
+body{
+background-color: #A9D7E9;
+}
+.header{
+    background-color: aliceblue;
+    text-align: center;
+}
