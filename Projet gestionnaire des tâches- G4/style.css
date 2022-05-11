@@ -1,1 +1,36 @@
 /* ici le code css  */
+
+body{
+    background: #A9D7E9;;
+}
+
+.ajout input {
+    height: 27px;
+    border: 1px solid rgb(230, 224, 224);
+}
+ .ajout{
+     background: #F3F3F3;
+     border-radius: 10px;
+     box-shadow: 5px 5px 5px gray;
+     padding-bottom: 50px;
+     padding-top: 10px;
+     text-align: center;
+     background: rgb(233, 230, 230);
+     margin: 50px auto;
+     height: auto;
+     width: 50%;
+     max-width: 600px;
+     min-width: 400px;
+ }
+.ajout button {
+    border-bottom-right-radius: 3px;
+    border-top-right-radius: 3px;
+    height: 30px;
+    width: 75px;
+    margin-left: -7px;
+    vertical-align: bottom;
+    background: rgb(104, 180, 216);
+    border: none;
+    font-size: 18px;
+    color: white ;
+}
