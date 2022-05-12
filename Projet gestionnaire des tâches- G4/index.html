@@ -16,17 +16,26 @@
         - background-color: #F3F3F3; ----- section
         -->
 
-<section>
-    <header>
-        <h1>Gestionnaire des tâches</h1>
-        <input type="text" id="todo"><input type="submit" value="Ajouter" onclick="ajout()">
-    </header>
-    <ul>
-        <li> <span onclick="supprimer()"> </span></li>
-    </ul>
-</section>
-
-
-<script src="script.js"></script>
+        <section class="ajout">
+    
+            <header>
+                <!-- input tag -->
+                <h1>Gestionnaire des tâches</h1>
+                <input id="add" onkeyup="taches()" type="text" name="search" placeholder="Titre ...">
+                <button type="submit" onclick="ajout()">Ajouter</button>
+            </header>
+        
+        <!-- ordered list -->
+            <ul id='list'>
+                
+            </ul>
+        
+            <div id="alert">
+              
+            </div>
+        </section>
+        
+         <!-- linking javascript -->
+        <script src="script.js"></script>
 </body>
 </html>
