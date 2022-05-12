@@ -1,36 +1,101 @@
-/* ici le code css  */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    background: inherit;
+    font-family: Arial, Helvetica, sans-serif;
+}
 
 body{
-    background: #A9D7E9;;
+    background-color: #A9D7E9;
 }
 
-.ajout input {
-    height: 27px;
-    border: 1px solid rgb(230, 224, 224);
+section{
+    width: 390px;
+    height: 50%;
+    background-color: #F3F3F3;
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    /* border-radius: 15px; */
+    transform: translate(-50%, -20%);
+    box-shadow: 0 3px 6px 5px rgba(0, 0, 0, 0.16) ;
 }
- .ajout{
-     background: #F3F3F3;
-     border-radius: 10px;
-     box-shadow: 5px 5px 5px gray;
-     padding-bottom: 50px;
-     padding-top: 10px;
-     text-align: center;
-     background: rgb(233, 230, 230);
-     margin: 50px auto;
-     height: auto;
-     width: 50%;
-     max-width: 600px;
-     min-width: 400px;
- }
-.ajout button {
-    border-bottom-right-radius: 3px;
-    border-top-right-radius: 3px;
-    height: 30px;
-    width: 75px;
-    margin-left: -7px;
-    vertical-align: bottom;
-    background: rgb(104, 180, 216);
+
+header{
+    /* background-color: orange; */
+    padding: 10px;
+    text-align: center;
+}
+h1{
+    padding: 10px;
+}
+input{
+    background-color: white;
     border: none;
-    font-size: 18px;
-    color: white ;
+    width: 80%;
+    padding: 10px;
+    font-size: 14px;
+}
+input[type=submit]{
+    width: 20%;
+    color: white;
+    background-color: #6BA2CE;
+    cursor: pointer;
+}
+ul{
+    list-style: none;
+    width: 100%;
+   margin-top: 10px;
+}
+li{
+    padding: 10px 10px 10px 40px;
+    margin-top: 1px;
+    position: relative;
+}
+li:nth-child(2n+1) {
+    background-color: #ebebeb;
+}
+
+li > span {
+    position: absolute;
+    right: 5px;
+    top: 0px;
+    padding: 10px 10px;
+    /* background-color: red;
+    color: white; */
+}
+
+li:hover{
+    cursor: pointer;
+    background-color: #A9D7E9;
+    /* background-color: #d6d1d1; */
+}
+
+li.checked {
+    text-decoration: line-through;
+    color: white;
+    background-color: rgb(162, 162, 162); 
+}
+
+li.checked::before{
+    content: "";
+    position: absolute;
+    border-color: white;
+    border-style: solid;
+    border-width: 0px 2px 2px 0px;
+    top: 10px;
+    left: 16px;
+    height: 15px;
+    width: 7px;
+    transform: rotate(45deg);
+}
+
+.x{
+    background-color: red;
+    color: white;
+    width: 30px;
+    /* padding: ; */
+    /* height: 100%; */
+    text-align: center;
 }
