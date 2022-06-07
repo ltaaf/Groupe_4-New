@@ -1,3 +1,4 @@
+/* ici notre fichier CSS */
 * {
     margin: 0px;
     padding: 0px;
@@ -6,10 +7,12 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/* le corps de la page */
 body{
     background-color: #A9D7E9;
 }
 
+/* sur le formualire saisi */
 section{
     width: 390px;
     height: 50%;
